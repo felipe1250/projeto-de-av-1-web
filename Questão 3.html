@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<head>
+	<title>Questão 03</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script type="text/javascript">
+		nome=prompt("Digite o nome do funcionario:");
+		salario=prompt("Digiteo o salario do funcionario");
+		cargo=prompt("Digite o cargo do funcionario:");
+
+		document.write("CONTRA CHEQUE");
+		document.write("<br>");
+		document.write("FUNCIONARIO: "+nome);
+		document.write("<br>"); 
+		document.write("CARGO: "+cargo);
+		document.write("<br>");
+		document.write("<br>"); 
+		document.write("SALARIO ATUAL: R$ "+salario);
+		document.write("<br>"); 	
+
+		if(cargo == "Atendente")
+		{
+			x = (salario*108)/100 
+			document.write("NOVO SALARIO: " + salario +"+ 8% = R$ " + x);
+			document.write("<br>"); 
+		}
+		else if(cargo == "Estoquista")
+		{
+			x = (salario*106)/100
+			document.write("NOVO SALARIO: " + salario +"+ 6% = R$ " + x);
+			document.write("<br>");  	
+		}
+		else if(cargo == "Gerente")
+		{
+			x = (salario*103)/100
+			document.write("NOVO SALARIO: " + salario +"+ 3% = R$ " + x);
+			document.write("<br>"); 
+		}
+
+		if(x <= 1045)
+		{
+			y = (7.5*x)/100
+			document.write("DESCONTO INSS: R$ "+ y + "(7.5%)");
+			document.write("<br>");
+			document.write("<br>");
+			a = x - y
+			document.write("SALARIO LIQUIDO: R$ "+ a);
+		}
+		else if(x > 1045 && x <=2089.60)
+		{
+			y = (9*x)/100
+			document.write("DESCONTO INSS: R$ "+ y + "(9%)");
+			document.write("<br>");
+			document.write("<br>");
+			a = x - y
+			document.write("SALARIO LIQUIDO: R$ "+ a);
+		}
+		else if(x > 2089.61 && x <= 3134.40)
+		{
+			y = (12*x)/100
+			document.write("DESCONTO INSS: R$ "+ y + "(12%)");
+			document.write("<br>");
+			document.write("<br>");
+			a = x - y
+			document.write("SALARIO LIQUIDO: R$ "+ a);
+		}
+
+	</script>
+</body>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script type="text/javascript">
+		nome=prompt("DIigte o seu nome: ")
+		peso=prompt("Digite o seu peso: ");
+		altura=prompt("Digite a sua altura: ");
+
+		document.write("PACIENTE: "+ nome)
+		document.write("<br>")
+		document.write("PESO: "+ peso)
+		document.write("<br>")
+		document.write("ALTURA: "+ altura)
+		document.write("<br>")
+
+		IMC=peso/(altura*altura)
+		document.write("IMC: "+ IMC)
+		document.write("<br>")
+		document.write("<br>")
+		
+		if(IMC < 18.5)
+		{
+			document.write("Olá"+ nome +", você está no nível de obesidade: baixo peso.Com este nível de IMC você está propenso a apresentar osseguintes problemas de saúde:Peso baixo para a altura. Maior probabilidade de anorexia.");
+		}
+		else if(IMC > 18.5 && IMC < 24.9)
+		{
+			document.write("Olá"+ nome +", você está no nível de obesidade: peso normal.Com este nível de IMC você está propenso a apresentar osseguintes problemas de saúde:Maior probabilidade de ser um individuo saudavel.");
+		}
+		else if(IMC > 25 && IMC < 29.9)
+		{
+			document.write("Olá"+ nome +", você está no nível de obesidade: pre-obesidade.Com este nível de IMC você está propenso a apresentar osseguintes problemas de saúde:Alguma probabilidade de problemas de sauda. Predisposição a tornar-se obeso.");
+		}
+		else if(IMC > 30 && IMC < 34.9)
+		{
+			document.write("Olá"+ nome +", você está no nível de obesidade: obesidade grau I.Com este nível de IMC você está propenso a apresentar osseguintes problemas de saúde:Risco Moderado de diabetes tipo II,hipertensão,colestero,cardiopatia.");
+		}
+		else if(IMC > 35 && IMCA < 39.9)
+		{
+			document.write("Olá"+ nome +", você está no nível de obesidade: obesidade grau II.Com este nível de IMC você está propenso a apresentar osseguintes problemas de saúde:Risco Grave: Aumenta o risco das doenças associadas. O risco de mortalidade aumenta 50%");
+		}
+		else if(IMC > 40)
+		{
+			document.write("Olá"+ nome +", você está no nível de obesidade: obesidade grau III ou obesidade mórbida.Com este nível de IMC você está propenso a apresentar osseguintes problemas de saúde:Risco Muito Grave. O risco de doenças associadas assim como a mortalidade aumenta 90%");
+		}
+		
+	</script>
+</body>
+</html>
